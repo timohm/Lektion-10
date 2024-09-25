@@ -7,6 +7,31 @@ body {
   overflow-x: hidden;
 }
 
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #2e2e2e;
+}
+
+/* Vill få bort margin ovanför navbar */
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
 .motivatingTitle {
   display: flex;
   justify-content: center;
@@ -31,13 +56,4 @@ body {
   justify-content: center;
   border: 5px solid #ffffff;
   border-radius: 50%;
-}
-
-.bignav {
-  background-color: aquamarine;
-  width: 100dvh;
-}
-
-.navbar {
-
 }

@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(73, 73, 73);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+.motivatingTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.motivatingMessage {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+}
+
+.imgdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+}
+
+.bignav {
+  background-color: aquamarine;
+  width: 100dvh;
+}
+
+.navbar {
+
+}

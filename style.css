@@ -8,6 +8,7 @@ body {
 }
 
 ul {
+  margin-top: 0;
   list-style-type: none;
   overflow: hidden;
   background-color: #2e2e2e;
@@ -16,7 +17,7 @@ ul {
 /* Vill få bort margin ovanför navbar */
 
 li {
-  float: left;
+  float:inline-start;
 }
 
 li a {
@@ -25,11 +26,14 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  animation: navBackGroundOut 450ms ease-in-out;
+  animation-fill-mode: forwards;
 }
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: #111;
+  animation: navBackGroundIn 450ms ease-in-out;
+  animation-fill-mode: forwards;
 }
 
 .motivatingTitle {
@@ -56,4 +60,14 @@ li a:hover {
   justify-content: center;
   border: 5px solid #ffffff;
   border-radius: 50%;
+}
+
+@keyframes navBackGroundIn {
+  from { background-color: #2e2e2e; }
+  to { background-color: #111;}
+}
+
+@keyframes navBackGroundOut {
+  from { background-color: #111; }
+  to { background-color: #2e2e2e;}
 }
